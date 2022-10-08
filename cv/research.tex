@@ -1,0 +1,36 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Research experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventrySimple
+    {Research assistant} % Job title
+    {Polytechnic University of Turin} % Organization
+    {Turin, Italy} % Location
+    {Dec. 2021 - Today} % Date(s)
+  \cvtext{
+    I am conducting research on bioinformatics algorithms and technologies, and on heterogeneous architectures.
+  I am currently working on three different tasks:
+    \begin{cvitems2}
+      \item \textbf{RNA structural alignment.} Improvement of the C++ program LaRA2 for pairwise RNA structural alignment, by
+      reducing the required time and memory footprint, especially for long sequences. The final objective is to
+      use LARA2 in conjunction with other tools to perform multiple structural sequence alignment and folding of COVID sequences, in a
+    reasonable time.
+      \item \textbf{Somatic structural variations (SVs) discovery.} Development of a pipeline for the discovery of somatic mutations
+    in ONT long read samples, coming from an oncology case study. The dataset contains paired samples of healthy and cancerous cells.
+    The basic idea is to discover SVs in both samples (using tools as CuteSV), to then identify the somatic SVs by subtracting the
+    germline mutations from the SVs in the cancerous sample. The parsing and subtraction of SVs is being developed in Python.
+      \item \textbf{Benchmarking of Intel's Lava framework.} Benchmarking of the recently released Lava framework by Intel,
+    for heterogeneous computing including neuromorphic hardware (like Intel's Loihi and Loihi2 chips). The benchmark is being
+    developed primarily in Python (as Lava is written in Python as well), and takes some inspiration from MPI benchmarks.
+    \end{cvitems2}
+  }
+%---------------------------------------------------------
+\end{cventries}

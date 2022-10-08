@@ -8,6 +8,10 @@
 *.out
 *.toc
 
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
