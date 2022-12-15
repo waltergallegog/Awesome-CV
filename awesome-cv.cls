@@ -756,7 +756,8 @@
 % Define a section for the cover letter
 % Usage: \lettersection{<section-title>}
 \newcommand{\lettersection}[1]{%
-  \par%\addvspace{2.5ex}
+  %\par%\addvspace{2.5ex}
+  \vspace*{-1.3mm}
   \phantomsection{}
   \lettersectionstyle{#1}
   %\color{gray}\vhrulefill{0.9pt}
@@ -784,7 +785,6 @@
 % Define a closing of the cover letter
 % Usage: \makeletterclosing
 \newcommand*{\makeletterclosing}{%
-  \vspace{3mm}
   \lettertextstyle{\@letterclosing} \\
   \lettertextstyle{\@firstname\ \@lastname}
   \ifthenelse{\isundefined{\@letterenclosure}}

@@ -1,0 +1,88 @@
+\input{coverletter/configurations.tex}
+
+\input{coverletter/personal-info.tex}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Computer Science Department}
+  {University of Virginia}
+
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+% \lettertitle{Statement of purpose for Ph.D. in Computer Engineering}
+% How the letter is opened
+
+\letteropening{Dear examining commission, with this letter I would like to express my interest for the Ph.D. position in computer science at UVA's School of Engineering and Applied Science.}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+%\makecvfooter
+%  {\today}
+%  {Walter Gallego Gomez~~~·~~~SOP}
+%  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+
+\input{coverletter/background.tex}
+
+%--------------------------------------------------------------------------
+%      Embedded systems
+%      Computer architectures
+%      FPGAs
+%      New technologies to speed up
+%      Bioinformatics
+%      TODO mention research assistant
+\lettersection{Research interests.}
+Computer architectures and their inner workings have always fascinated me. The opportunities to improve computational performance utilizing new emerging technologies, such as neuromorphic designs, and their integration with traditional ones like CPUs, GPUs and FPGAs is a topic I would love to investigate.
+In terms of applicability, I am interested in bioinformatics because of the impact it can have on medical research, and the challenges it posses due to the large amounts of noisy data that needs to be analyzed, requiring high computational power and the use of innovative disciplines like machine learning.
+
+
+\input{coverletter/phd.tex}
+
+
+%--------------------------------------------------------------------------
+
+%  - one of the top ranked public universities
+%  - Strong computer science Department
+%  - multi disciplines
+%  - computer architectures
+%  - well organized phd program
+%  - faculty and papers
+
+\lettersection{Why UVA.}
+UVA captured my attention for being one of the top-ranked public institutions in the USA, with a strong focus on research activities. The diversity of the programs and multidisciplinary Labs suggest that students can collaborate with colleagues from other departments in projects that can have a significant impact on society. Out of the programs offered I have chosen computer science as it is the one that aligns better with my background, and with one of the topics I would love to investigate which is computer architectures. Looking at the faculty members, their published papers and their current work, I was able to find professors with whom I would like to work on interesting and challenging projects, involving the improvement of existing technologies like GPUs, and the design of hardware accelerators for bioinformatics algorithms.
+
+\input{coverletter/aspirations.tex}
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}

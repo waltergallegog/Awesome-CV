@@ -1,0 +1,87 @@
+\input{coverletter/configurations.tex}
+
+\input{coverletter/personal-info.tex}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Biomedical Engineering Department}
+  {University of Virginia}
+
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+% \lettertitle{Statement of purpose for Ph.D. in Computer Engineering}
+% How the letter is opened
+
+\letteropening{Dear examining commission, with this letter I would like to express my interest for the Ph.D. position in biomedical engineering at UVA's School of Engineering and Applied Science.}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+%\makecvfooter
+%  {\today}
+%  {Walter Gallego Gomez~~~·~~~SOP}
+%  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+
+\input{coverletter/background.tex}
+
+%--------------------------------------------------------------------------
+%      Bioinformatics
+%      TODO mention research assistant
+\lettersection{Research interests.}
+I am interested in multidisciplinary research projects that allow me to put to good use all the knowledge and skills in electronics and programming that I have acquired  during my academic and professional career. In particular, I am interested in bioinformatics, because of the impacts it can have on medical research, and the challenges it posses due to the large amounts of noisy data that needs to be analyzed, requiring high computational power and the use of innovative disciplines, such as machine learning.
+
+
+\input{coverletter/phd.tex}
+
+
+%--------------------------------------------------------------------------
+
+%  - one of the top ranked public universities
+%  - Strong computer science Department
+%  - multi disciplines
+%  - bioinformatics
+%  - well organized phd program
+%  - faculty and papers
+%  - medicine
+%  - I would love to use my computer/electronic skills in an applied environment like bioinformatics.
+
+\lettersection{Why UVA.}
+UVA captured my attention for being one of the top-ranked public institutions in the USA, with a strong focus on research activities. The diversity of the programs and multidisciplinary Labs suggest that students can collaborate with colleagues from other departments in projects that can have a significant impact on society.
+Out of the programs offered I have chosen biomedical engineering, as I would love to use my computer and electronics skills in an applied environment like bioinformatics, and I believe UVA's BME department, with its ideal location between the School of Medicine and the School of Engineering, is the perfect place for me. Looking at the faculty members, their published papers and their current work, I was able to find professors with whom I would like to work on interesting and challenging projects, involving the development of software tools for the analysis of genetic data.
+
+
+\input{coverletter/aspirations.tex}
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
